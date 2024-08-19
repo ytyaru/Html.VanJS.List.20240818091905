@@ -25,6 +25,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         l[0] = 6
         return 6===l[0]
     })
+    a.t(()=>{
+        const l = List.of([5])
+        l.add(6)
+        console.log(l, l.index, l.lastIndex)
+        return 2===l.length && 5===l[0] && 6===l[1]
+    })
     a.fin()
 });
 window.addEventListener('beforeunload', (event) => {
